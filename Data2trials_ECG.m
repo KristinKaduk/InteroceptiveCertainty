@@ -1,4 +1,4 @@
-function Data2trials_ECG_20180910()
+function Data2trials_ECG()
 %% Kristin start:03072017
 
 %To DO: Weich-Kodieren - z.B. Name PARAMETER.source_file_s(5:end-4)]
@@ -52,7 +52,7 @@ AllData_Combined = [];% initiate a variable
         case 'HBC_Period'
            % extract the HBC_period
             cfg.trialdef.eventvalue_Start = 'S 41';
-            cfg.trialdef.eventvalue_End   = 'S 43';
+            cfg.trialdef.eventvalue_End   = 'S 42';
             cfg.trialfun = 'ft_trialfun_extractBetweenTwoTriggers'; % searching between two triggers
         case 'Baseline_Period'
             % extract the BaselinePeriod
